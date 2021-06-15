@@ -1,15 +1,14 @@
 '''
-The script extracts the orbital magnetic moments from the OUTCAR file
-and prints them to a file named OrbitalData.
+The script extracts the orbital magnetic moments from the OUTCAR file and prints them to a file named OrbitalData.
 The orbital magnetic moments share the same order as the POSCAR or CONTCAR ions.
 To use this script:
     python readOrbital.py
 The OUTCAR file must be present in the same dictionary.
-The respective columns in the OrbitalData file give 
-the orbital magnetic moments in the x, y, and z dimensions.
-The final column is the total orbital magnetic moment calculated 
-by pythagorean theorem.
-Author: Megan Hoover, adapted from James T. Pegg
+LSORBIT = .TRUE. must be present in the INCAR file to prevent an error at lines 35 & 44 to be true.
+The respective columns in the OrbitalData file give the orbital magnetic moments in the x, y, and z dimensions.
+The final column is the total orbital magnetic moment calculated by pythagorean theorem.
+Author: Megan Hoover
+Adapted from James T. Pegg's script that extracts the magnetic moments from the OUTCAR file.
 '''
 
 import os

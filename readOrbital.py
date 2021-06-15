@@ -4,9 +4,8 @@ The orbital magnetic moments share the same order as the POSCAR or CONTCAR ions.
 To use this script:
     python readOrbital.py
 The OUTCAR file must be present in the same dictionary.
-LSORBIT = .TRUE. # switches on SOC and automatically turns LNONCOLLINEAR = .TRUE. - must be present in the INCAR file to prevent 
-an error at lines 35 & 44 to be true.
 LORBMOM = .TRUE. - must be present in the INCAR file because this flag tells VASP to write the orbital moments in the OUTCAR file.
+WARNING! LORBMOM only works if LSORBIT = .TRUE. is present in the INCAR file. Refer to VASP manual for more info.
 The respective columns in the OrbitalData file give the orbital magnetic moments in the x, y, and z dimensions.
 The final column is the total orbital magnetic moment calculated by pythagorean theorem.
 Author: Megan Hoover

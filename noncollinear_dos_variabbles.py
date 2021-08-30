@@ -1,5 +1,5 @@
 # What is the atom order?
-with open("/home/mel2/Python_Noncollinear_DOS/POSCAR", 'r') as reader:
+with open("directory path/POSCAR", 'r') as reader:
     POSCAR_data = reader.readlines()
 
 # Extract line 6 and 7 in POSCAR
@@ -17,7 +17,7 @@ Second_Element = elements_list[1]
 Num_Second_Element = num_per_elements_list[1]
 
 # Extract NEDOS, E_max, E_min, and FERMI values from the DOSCAR file
-with open("/home/mel2/Python_Noncollinear_DOS/DOSCAR", 'r') as reader:
+with open("directory path/DOSCAR", 'r') as reader:
     DOSCAR_data = reader.readlines()
 
 # Extract line 1 and 6 in DOSCAR
@@ -70,9 +70,9 @@ print("Each atom encompasses",b,"lines.")
 print("The total number of lines in the original DOSCAR file are", num_lines)
 
 # Ignore some lines and write everything else to a datafile
-with open("/home/mel2/Python_Noncollinear_DOS/DOSCAR",'r') as infile:
+with open("directory path/DOSCAR",'r') as infile:
     lines = infile.readlines()
-    with open("/home/mel2/Python_Noncollinear_DOS/DOSCAR_datafile", 'w') as outfile:
+    with open("directory path/DOSCAR_datafile", 'w') as outfile:
         outfile.writelines(lines[1006:])
 
 # Find the total number of lines in the file 'DOSCAR_datafile'

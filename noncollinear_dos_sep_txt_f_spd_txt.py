@@ -1,7 +1,7 @@
 import os
 
 # List all files in directory
-directory_path = '/home/mel2/Python_Noncollinear_DOS/'
+directory_path = 'directory path'
 directory = os.listdir(directory_path)
 
 # Move all the odd lines into spd_DOSCAR_datafile_#.txt

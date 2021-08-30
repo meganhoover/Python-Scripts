@@ -1,7 +1,7 @@
 import pandas as pd
 
 # List all files in directory
-directory_path = '/home/mel2/Python_Noncollinear_DOS/'
+directory_path = 'directory path'
 directory = os.listdir(directory_path)
 
 # Convert f_*.txt and spd_*.txt files into *.csv files
